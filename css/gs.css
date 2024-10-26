@@ -1,0 +1,112 @@
+/* 全局样式重置 */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.koxiuqiu.cn/ccss/ecyrw/ecy%20(68).png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 定义自定义字体 */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用自定义字体到body元素 */
+body {
+    font-family: 'MyCustomFont', SimSun;
+    font-size: 18px;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* 容器宽度调整为屏幕宽度的80% */
+    max-width: 1200px; /* 最大宽度限制 */
+    margin: 50px auto; /* 添加垂直外边距并水平居中 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* 调整背景透明度 */
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬浮时的容器样式 */
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 头部和备案信息样式 */
+.header, .records {
+    width: 100%; /* 宽度调整为容器宽度 */
+}
+
+.header h1, h2{
+    color: #e5c8fc;
+    text-shadow: 1px 1px 1px black;
+    text-align: center; /* 标题居中 */
+}
+
+.records {
+    display: flex;
+    flex-wrap: wrap; /* 允许备案信息换行 */
+    justify-content: space-around; /* 分散对齐 */
+    padding: 5px 0; /* 添加垂直内边距 */
+}
+
+.record {
+    width: 20%; /* 每行显示4个备案信息 */
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.4); /* 调整背景透明度 */
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.record .website-name, .record .icp-number {
+    color: white; /* 调整文本颜色 */
+    text-shadow: 2px 2px 5px black; /* 恢复文本阴影 */
+    text-align: center; /* 文本居中 */
+}
+
+        a {
+            text-decoration: none; /* 移除链接的下划线 */
+        }
+
+/* 底部样式 */
+.footer {
+    width: 100%; /* 宽度调整为容器宽度 */
+    margin-top: 50px; /* 添加上外边距 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* 调整背景透明度 */
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    text-align: center; /* 文本居中 */
+}
+
+.footer a {
+    color: white; /* 恢复文本颜色 */
+    text-decoration: none;
+    margin: 0 10px;
+    text-shadow: 2px 2px 5px black; /* 恢复文本阴影 */
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px; /* 调整字体大小 */
+    }
+    .record {
+        width: 48%; /* 每行显示2个备案信息 */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .record {
+        width: 100%; /* 在小屏幕上每行显示1个备案信息 */
+    }
+}

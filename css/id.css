@@ -1,0 +1,159 @@
+/* 定义自定义字体规则 */
+@font-face {
+    /* 字体家族名称 */
+    font-family: 'MyCustomFont';
+    /* 字体资源路径和格式 */
+    src: url('1.woff2') format('woff2');
+    /* 字体的正常粗细和样式 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用自定义字体到body元素 */
+body {
+    /* 设置字体家族，如果自定义字体不可用，则使用SimSun字体 */
+    font-family: 'MyCustomFont', SimSun;
+    /* 设置字体大小 */
+    font-size: 18px;
+    /* 重置margin和padding */
+    margin: 0;
+    padding: 0;
+    /* 设置背景图片，不平铺，居中，固定位置 */
+    background: url('https://cdn.koxiuqiu.cn/ccss/rw.php') no-repeat center center fixed;
+    /* 背景图片覆盖整个视口 */
+    background-size: cover;
+}
+
+/* 容器样式 */
+.container {
+    /* 使用flex布局 */
+    display: flex;
+    /* 子元素垂直排列 */
+    flex-direction: column;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 宽度为视口宽度的50% */
+    width: 50%;
+    /* 最大宽度限制 */
+    max-width: 1200px;
+    /* 水平居中 */
+    margin: auto;
+    /* 内边距 */
+    padding: 20px;
+    /* 背景颜色半透明 */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* 边框圆角 */
+    border-radius: 10px;
+    /* 背景模糊效果 */
+    backdrop-filter: blur(20px);
+    /* 背景颜色变化过渡效果 */
+    transition: background-color 0.3s;
+    /* 绝对定位 */
+    position: absolute;
+    /* 垂直居中 */
+    top: 50%;
+    /* 水平居中 */
+    left: 50%;
+    /* 偏移量，确保容器居中 */
+    transform: translate(-50%, -50%);
+}
+
+
+/* 头部样式 */
+.header {
+    /* 文字颜色 */
+    color: #e5c8fc;
+    /* 文字阴影 */
+    text-shadow: 1px 1px 1px black;
+    /* 文字居中 */
+    text-align: center;
+}
+
+/* 表格容器样式 */
+.table-container {
+    /* 宽度 */
+    width: 80%;
+    /* 边框样式 */
+    border: 2px dashed purple;
+    /* 边框圆角 */
+    border-radius: 20px;
+}
+
+/* 行样式 */
+.row {
+    /* 使用flex布局 */
+    display: flex;
+    /* 底部边框样式 */
+    border-bottom: 2px dashed purple;
+}
+
+/* 最后一行的底部边框样式 */
+.row:last-child {
+    border-bottom: none;
+}
+
+/* 单元格样式 */
+.cell {
+    /* 占据剩余空间 */
+    flex: 1;
+    /* 内边距 */
+    padding: 10px;
+    /* 文字左对齐 */
+    text-align: left;
+    /* 右边框样式 */
+    border-right: 2px dashed purple;
+    /* 文字颜色 */
+    color: white;
+    /* 文字阴影 */
+    text-shadow: 1px 1px 3px black;
+}
+
+/* 最后一列的右边框样式 */
+.cell:last-child {
+    border-right: none;
+}
+
+/* 表头单元格样式 */
+.header-cell {
+    /* 加粗 */
+    font-weight: bold;
+    /* 宽度 */
+    width: 85px;
+    /* 固定宽度，不参与flex布局 */
+    flex: 0 0 auto;
+    /* 文字居中 */
+    text-align: center;
+}
+
+.footer {
+    position: fixed; /* 使用固定定位 */
+    left: 0; /* 左侧对齐 */
+    right: 0; /* 右侧对齐 */
+    bottom: 0; /* 底部对齐 */
+    width: auto; /* 宽度自动适应内容 */
+    margin: 0 auto; /* 水平居中 */
+    height: auto; /* 高度自动适应内容 */
+    padding: 20px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    background-color: rgba(255, 255, 255, 0.3); /* 背景颜色，带有透明度 */
+    border-radius: 5px; /* 边框圆角 */
+    backdrop-filter: blur(10px); /* 背景模糊效果 */
+}
+
+
+/* 底部链接样式 */
+.footer a {
+    color: white; /* 文本颜色 */
+    text-decoration: none; /* 移除下划线 */
+    margin: 0 10px; /* 外边距 */
+    text-shadow: 2px 2px 5px black; /* 文本阴影效果 */
+}
+
+/* 底部链接悬浮、访问、激活时的样式 */
+.footer a:hover,
+.footer a:visited,
+.footer a:active {
+    color: white; /* 文本颜色保持不变 */
+}

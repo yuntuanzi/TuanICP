@@ -1,0 +1,133 @@
+/* 全局样式重置 */
+body {
+    margin: 0; /* 移除默认的外边距 */
+    padding: 0; /* 移除默认的内边距 */
+    background: url('https://cdn.koxiuqiu.cn/ccss/ecyrw/ecy%20(68).png') no-repeat center center fixed; /* 设置背景图片，不重复，居中，固定 */
+    background-size: cover; /* 背景图片覆盖整个可视区域 */
+}
+
+/* 定义自定义字体 */
+@font-face {
+    font-family: 'MyCustomFont'; /* 字体名称 */
+    src: url('1.woff2') format('woff2'); /* 字体文件路径和格式 */
+    font-weight: normal; /* 字体粗细 */
+    font-style: normal; /* 字体样式 */
+}
+
+/* 应用自定义字体到body元素 */
+body {
+    font-family: 'MyCustomFont', SimSun; /* 优先使用自定义字体，如果不可用则使用无衬线字体 */
+    font-size: 18px; /* 设置字体大小 */
+}
+
+/* 容器样式 */
+.container {
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    width: fit-content; /* 容器宽度适应内容 */
+    margin: auto; /* 删除具体的垂直和水平外边距，因为我们将使用绝对定位 */
+    padding: 20px; /* 内边距 */
+    background-color: rgba(255, 255, 255, 0.2); /* 背景颜色，带有透明度 */
+    border-radius: 15px; /* 边框圆角 */
+    backdrop-filter: blur(5px); /* 背景模糊效果 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+    position: absolute; /* 使用绝对定位 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 移动自身宽度和高度的一半，实现居中效果 */
+}
+
+/* 鼠标悬浮时的容器样式 */
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 头部样式 */
+.header {
+    color: #e5c8fc; /* 文本颜色 */
+    text-shadow: 1px 1px 1px black; /* 文本阴影效果 */
+}
+
+/* 搜索框样式 */
+.search-box {
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 水平居中 */
+    margin-top: 20px; /* 上外边距 */
+}
+
+/* 搜索输入框样式 */
+.search-input {
+    width: 500px; /* 宽度 */
+    padding: 10px; /* 内边距 */
+    border: 2px dashed blue; /* 边框样式 */
+    border-radius: 15px; /* 边框圆角 */
+    text-align: center; /* 文本居中 */
+    outline: none; /* 移除输入框聚焦时的轮廓线 */
+    color: blue; /* 文本颜色 */
+    background-color: transparent; /* 输入框背景透明 */
+}
+
+/* 搜索按钮样式 */
+.search-button {
+    padding: 10px 20px; /* 内边距 */
+    border: none; /* 移除边框 */
+    border-radius: 15px; /* 边框圆角 */
+    background-color: #e5c8fc; /* 背景颜色 */
+    cursor: pointer; /* 鼠标样式为指针 */
+    outline: none; /* 移除聚焦时的轮廓线 */
+}
+
+.search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #222222;
+
+}
+
+.search-input::-moz-placeholder { /* Firefox 19+ */
+  color: #222222;
+
+}
+
+p {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.footer {
+    position: fixed; /* 使用固定定位 */
+    left: 0; /* 左侧对齐 */
+    right: 0; /* 右侧对齐 */
+    bottom: 0; /* 底部对齐 */
+    width: auto; /* 宽度自动适应内容 */
+    margin: 0 auto; /* 水平居中 */
+    height: auto; /* 高度自动适应内容 */
+    padding: 20px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    background-color: rgba(255, 255, 255, 0.3); /* 背景颜色，带有透明度 */
+    border-radius: 5px; /* 边框圆角 */
+    backdrop-filter: blur(10px); /* 背景模糊效果 */
+}
+
+
+/* 底部链接样式 */
+.footer a {
+    color: white; /* 文本颜色 */
+    text-decoration: none; /* 移除下划线 */
+    margin: 0 10px; /* 外边距 */
+    text-shadow: 2px 2px 5px black; /* 文本阴影效果 */
+}
+
+/* 底部链接悬浮、访问、激活时的样式 */
+.footer a:hover,
+.footer a:visited,
+.footer a:active {
+    color: white; /* 文本颜色保持不变 */
+}
+/* Styles for screens less than 1000 pixels wide */
+@media (max-width: 1000px) {
+    .search-input {
+        width: 300px; /* Set to 80% of the parent div */
+        margin: 0 auto; /* Center the input box */
+    }
+}
+
