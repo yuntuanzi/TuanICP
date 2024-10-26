@@ -1,6 +1,6 @@
 # 项目介绍
 云团子ICP备案系统是一款开源、UI可爱、界面美观的第三方icp虚拟备案系统，适合作为博客页脚可爱的装饰哦！
-预览站点：[https://www.yuncheng.fun/](https://www.yuncheng.fun/)
+预览站点：[https://icp.yuncheng.fun/](https://icp.yuncheng.fun/)
 > 这款系统是课余时间开发的，开源版没好好写，直接把早期版本拿过来开源了，需要完整版的可以找我哦~
 > 开源版会不定期维护，有问题可以直接私下联系
 > QQ：937319686
