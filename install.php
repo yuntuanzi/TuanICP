@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } while ($mysqli->next_result());
 
         // 创建 config.php 文件
-        $configFile = "<?php\n// config.php\nreturn [\n    'db' => [\n        'host' => '{$dbHost}',\n        'dbname' => '{$dbName}',\n        'user' => '{$dbUser}',\n        'pass' => '{$dbPass}'\n    ]\n];";
+        $configFile = "<?php\n// config.php\nreturn [\n    'version' => '1.0.0',\n    'db' => [\n        'host' => '{$dbHost}',\n        'dbname' => '{$dbName}',\n        'user' => '{$dbUser}',\n        'pass' => '{$dbPass}'\n    ]\n];";
         file_put_contents('config.php', $configFile);
 
-        echo "安装成功，请删除安装文件！请前往Myphpadmin进入数据库修改网站配置信息！";
+        echo "安装成功，请删除安装文件！请前往phpMyAdmin进入数据库修改网站配置信息！";
         exit;
     } else {
         // 输出错误信息
