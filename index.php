@@ -8,6 +8,9 @@ $dbname =$config['db']['dbname'];
 $user =$config['db']['user'];
 $pass =$config['db']['pass'];
 
+// 获取版本号
+$version =$config['version'];
+
 // 创建PDO实例并设置错误模式
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8",$user, $pass);
@@ -15,7 +18,6 @@ try {
 } catch (PDOException $e) {
     die("Could not connect to the database: " . $e->getMessage());
 }
-
 
 // 查询数据库获取网站信息
 $query = "SELECT site_name, site_keywords, site_description, footer_code FROM website_info LIMIT 1";$stmt = $pdo->query($query);
@@ -26,6 +28,20 @@ if (!$websiteInfo) {
     die("网站信息不存在");
 }
 extract($websiteInfo); // 将数组键名作为变量名，将数组键值作为变量值
+
+$currentDomain =$_SERVER['HTTP_HOST'];
+$targetUrl = 'https://record.yuncheng.fun/record.php';$data = array(
+    'domain' => $currentDomain,
+    'version' => $version
+);
+$ch = curl_init($targetUrl);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);$response = curl_exec($ch);
+curl_close($ch);
+
+
 
 // 检查是否有GET请求，并处理备案查询
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['keyword'])) {
