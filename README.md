@@ -75,13 +75,14 @@
 | 雾ICP备 📧 | 云团子，筱序二十 | v1.0.0 | 💖开源、🩷UI可爱、🩵界面美观 | [前往仓库](https://github.com/wugov/WuICP) 🚗 |
 | 维ICP备 ✉️ | 云团子，小维 | v1.0.0 | 维ICP备案系统是一款💖开源、🩵界面美观的第三方icp虚拟备案系统 | [前往仓库](https://github.com/xiaowei-wei/-ICP-Virtual-ICP-Filing-System) 🚗 |
 
-## 特别点名
+## 点名批评
 | 站点名称 | 所有者 | 点名原因 | 相关证据1 |相关证据2 |内容地址 |
 |---------|------|------|------|------|----------|
-| 魔ICP备 | 永康市闪乐巧软件开发工作室（个体工商户）(牛三维) mir26266@163.com | 仿照本项目迁跃和徽章生成器样式和逻辑，并且用于商业化行为 | ![image](https://github.com/user-attachments/assets/ae34ad98-6f78-46e8-b80e-92cb960661af) | ![image](https://github.com/user-attachments/assets/38a27ff8-6c09-4ae1-a1bb-20405ea50800) | [查看](https://moicp.cn) |
+| 魔ICP备 | 永康市闪乐巧软件开发工作室（个体工商户）(牛三维) mir26266@163.com | 仿照本项目迁跃和徽章生成器样式和逻辑，并且用于商业化行为，未遵守本仓库所声明的开源协议。 | ![image](https://github.com/user-attachments/assets/ae34ad98-6f78-46e8-b80e-92cb960661af) | ![image](https://github.com/user-attachments/assets/38a27ff8-6c09-4ae1-a1bb-20405ea50800) | [查看](https://moicp.cn) |
 
 # 鸣谢
 - 感谢中华人民共和国、中央人民政府
+- 感谢 梅川酷子 赞助的域名“tuanicp.com”
 - 感谢风屿wind对本项目的维护和支持(该开发者由于严重违规行为，已经移出本项目开发)
 - PHP，MySQL，Nginx，宝塔，Linux，奶安云，星SCDN，jsDelivr，HTML，JS，CSS（排名无先后）
 
