@@ -78,7 +78,7 @@
 ## 特别点名
 | 站点名称 | 所有者 | 点名原因 | 相关证据1 |相关证据2 |内容地址 |
 |---------|------|------|------|------|----------|
-| 魔ICP备 | 牛三维 | 仿照本项目迁跃和徽章生成器样式和逻辑，并且用于商业化行为 | ![image](https://github.com/user-attachments/assets/ae34ad98-6f78-46e8-b80e-92cb960661af) | ![image](https://github.com/user-attachments/assets/38a27ff8-6c09-4ae1-a1bb-20405ea50800) | [查看](https://moicp.cn) |
+| 魔ICP备 | 永康市闪乐巧软件开发工作室（个体工商户）(牛三维) mir26266@163.com | 仿照本项目迁跃和徽章生成器样式和逻辑，并且用于商业化行为 | ![image](https://github.com/user-attachments/assets/ae34ad98-6f78-46e8-b80e-92cb960661af) | ![image](https://github.com/user-attachments/assets/38a27ff8-6c09-4ae1-a1bb-20405ea50800) | [查看](https://moicp.cn) |
 
 # 鸣谢
 - 感谢中华人民共和国、中央人民政府
