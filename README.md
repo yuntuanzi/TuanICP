@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/be69c819-0a1e-4e5a-abbe-619b13aaa371)
+![开发者开除公示](https://github.com/user-attachments/assets/be69c819-0a1e-4e5a-abbe-619b13aaa371)
 
 # 请务必务必看完整个readme！！！ 📚
 
