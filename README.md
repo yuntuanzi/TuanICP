@@ -75,10 +75,13 @@
 | 雾ICP备 📧 | 云团子，筱序二十 | v1.0.0 | 💖开源、🩷UI可爱、🩵界面美观 | [前往仓库](https://github.com/wugov/WuICP) 🚗 |
 | 维ICP备 ✉️ | 云团子，小维 | v1.0.0 | 维ICP备案系统是一款💖开源、🩵界面美观的第三方icp虚拟备案系统 | [前往仓库](https://github.com/xiaowei-wei/-ICP-Virtual-ICP-Filing-System) 🚗 |
 
-## 点名批评
-| 站点名称 | 所有者 | 点名原因 | 相关证据1 |相关证据2 |内容地址 |
-|---------|------|------|------|------|----------|
-| 魔ICP备 | 永康市闪乐巧软件开发工作室（个体工商户）(牛三维) mir26266@163.com | 仿照本项目迁跃和徽章生成器样式和逻辑，并且用于商业化行为，未遵守本仓库所声明的开源协议。 | ![image](https://github.com/user-attachments/assets/ae34ad98-6f78-46e8-b80e-92cb960661af) | ![image](https://github.com/user-attachments/assets/38a27ff8-6c09-4ae1-a1bb-20405ea50800) | [查看](https://moicp.cn) |
+## 公益活动 - 大爱无疆，科技助力
+
+在与永康市闪乐巧软件开发工作室（个体工商户）的友好协商下，双方同意共同发起一场公益活动。
+- 在官方渠道捐款188元后，可同时获得TuanICP与酷AIA网站联盟系统（价值共计：416元），需分别与我们联系，也可由单方代为转达。
+- 团子：937319686
+- 牛三维：mir26266@163.com
+<img width="1468" height="728" alt="3eb05ba190a6dcf783c7d9cfa0d6b671" src="https://github.com/user-attachments/assets/98721f79-443b-4a71-8739-a099dccdd7e4" />
 
 # 鸣谢
 - 感谢中华人民共和国、中央人民政府
