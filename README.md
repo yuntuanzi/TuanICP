@@ -1,7 +1,8 @@
+### 赞助商广告，请多多支持鸭❤️
 <a href="https://www.qinglongyun.com/" target="_blank">
-<img width="1511" height="295" alt="赞助商广告图片" src="https://github.com/user-attachments/assets/54fa2687-c485-46e2-8714-a66605921699" />
+<img width="1511" height="295" alt="青龙云www.qinglongyun.com" src="https://github.com/user-attachments/assets/54fa2687-c485-46e2-8714-a66605921699" />
 </a>
-
+<br>
 
 # 请务必务必看完整个readme！！！ 📚
 
