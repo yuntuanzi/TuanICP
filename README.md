@@ -1,4 +1,7 @@
-![开发者开除公示](https://github.com/user-attachments/assets/be69c819-0a1e-4e5a-abbe-619b13aaa371)
+<a href="https://www.qinglongyun.com/" target="_blank">
+<img width="1511" height="295" alt="赞助商广告图片" src="https://github.com/user-attachments/assets/54fa2687-c485-46e2-8714-a66605921699" />
+</a>
+
 
 # 请务必务必看完整个readme！！！ 📚
 
