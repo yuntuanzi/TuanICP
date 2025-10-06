@@ -1,0 +1,177 @@
+.header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.number-container {
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.prefix-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.prefix-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prefix-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.prefix-btn.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-color: transparent;
+}
+
+.number-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.number-table th {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.number-table td {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.number-table tr:hover td {
+    background-color: var(--hover-color);
+}
+
+.number-cell {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0.1rem;
+    font-size: 0.95rem;
+}
+
+.number-cell:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-year {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+@media (min-width: 1200px) {
+    .number-table td {
+        width: 16.666%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .number-table td {
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .number-table td {
+        width: 25%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .number-table td {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 575px) {
+    .number-table td {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-link {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .number-container {
+        padding: 1rem;
+    }
+
+    .prefix-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .number-table th,
+    .number-table td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+
+    .number-table {
+        font-size: 0.9rem;
+    }
+
+    .number-cell {
+        padding: 0.3rem 0.6rem;
+    }
+}

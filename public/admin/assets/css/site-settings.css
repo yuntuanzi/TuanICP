@@ -1,0 +1,26 @@
+/* 限制表单元素最大宽度 */
+.form-control {
+    max-width: 600px;
+}
+
+/* 限制提交按钮最大宽度 */
+.form-submit .btn {
+    max-width: 200px;
+}
+
+/* 确保全宽元素不受限制 */
+.form-group.full-width .form-control {
+    max-width: none;
+}
+
+/* 保持表单网格布局 */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* 确保全宽元素占满网格 */
+.form-group.full-width {
+    grid-column: 1 / -1;
+}

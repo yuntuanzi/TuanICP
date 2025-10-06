@@ -1,0 +1,120 @@
+.header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.records-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.record-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.record-card:hover {
+    transform: translateY(-3px);
+    background: var(--card-hover);
+    border-color: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.record-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.record-card:hover::before {
+    opacity: 1;
+}
+
+.record-avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.record-card:hover .record-avatar {
+    transform: scale(1.03);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.record-info {
+    flex: 1;
+}
+
+.record-title {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.record-card:hover .record-title {
+    color: var(--primary-color);
+}
+
+.record-number {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-family: 'Courier New', monospace;
+    color: var(--text-secondary);
+    background: rgba(74, 144, 226, 0.08);
+    border: 1px solid rgba(74, 144, 226, 0.15);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.record-card:hover .record-number {
+    color: var(--primary-color);
+    background: rgba(74, 144, 226, 0.15);
+    border-color: rgba(74, 144, 226, 0.3);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.8rem;
+    }
+
+    .records-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .record-card {
+        padding: 1rem;
+    }
+
+    .record-avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+    }
+}

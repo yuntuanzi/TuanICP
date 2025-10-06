@@ -1,0 +1,339 @@
+:root {
+  --bg-color: rgba(255, 255, 255, 0.85);
+  --border-color: rgba(108, 92, 231, 0.2);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #6c5ce7, #4a90e2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.form-container {
+  background: var(--bg-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-color);
+  position: relative;
+  z-index: 5;
+  margin-top: 2rem;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1.2rem;
+}
+
+.form-table th {
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 0;
+  font-weight: 500;
+  color: var(--text-primary);
+  vertical-align: top;
+  width: 120px;
+}
+
+.form-table td {
+  padding: 0;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.form-input::placeholder {
+  color: #b2bec3;
+}
+
+textarea.form-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.email-verify-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.verify-input {
+  flex: 1;
+}
+
+.send-verify-btn {
+  padding: 0 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-verify-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.2);
+}
+
+.send-verify-btn:disabled {
+  background: #b2bec3;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(108, 92, 231, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.form-hint {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.hidden-field {
+  display: none;
+}
+
+.agreement-container {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(108, 92, 231, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.agree-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.agree-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.agree-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.agree-label:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.agree-checkbox:checked + .agree-label:before {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.agree-checkbox:checked + .agree-label:after {
+  opacity: 1;
+}
+
+.agreement-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.agreement-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.agreement-link:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+.agreement-link:hover:after {
+  width: 100%;
+}
+
+.agreement-error {
+  color: #ff4757;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  height: 1.2rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.agreement-shake {
+  animation: shake 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .form-table {
+    border-spacing: 0 1rem;
+  }
+
+  .form-table th {
+    width: 100px;
+    padding-right: 0.5rem;
+  }
+
+  .email-verify-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .send-verify-btn {
+    padding: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-table th {
+    display: block;
+    width: 100%;
+    padding-bottom: 0.3rem;
+  }
+
+  .form-table td {
+    display: block;
+    width: 100%;
+  }
+}
+@keyframes toastSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes toastSlideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+#custom-toast {
+    animation: toastSlideIn 0.3s ease forwards;
+}
+
+#custom-toast.hiding {
+    animation: toastSlideOut 0.3s ease forwards;
+}

@@ -1,0 +1,254 @@
+.icp-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.icp-title {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.icp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.8rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.icp-table tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.icp-table tr:last-child {
+    border-bottom: none;
+}
+
+.icp-table th {
+    text-align: left;
+    padding: 0.8rem 1.2rem;
+    width: 130px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    vertical-align: middle;
+    background-color: rgba(106, 90, 205, 0.03);
+    border-right: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+.icp-table td {
+    padding: 0.8rem 1.2rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.domain-link {
+    color: var(--domain-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status.pending {
+    background-color: #f39c12;
+}
+
+.status.rejected {
+    background-color: var(--accent-color);
+}
+
+.feedback-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 0.6rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.mascot {
+    text-align: center;
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.mascot::before {
+    content: '✧･ﾟ: *✧･ﾟ:* ';
+    opacity: 0.6;
+}
+
+.mascot::after {
+    content: ' *:･ﾟ✧*:･ﾟ✧';
+    opacity: 0.6;
+}
+
+.no-result {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding: 1.5rem 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-decoration: none;
+    min-width: 110px;
+    width: 120px;
+    height: 38px; 
+    text-align: center;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.action-btn-primary {
+    background-color: rgba(135, 206, 235, 0.3);
+    color: #0066cc;
+    border-color: #1e90ff;
+}
+
+.action-btn-secondary {
+    background-color: rgba(255, 160, 180, 0.3);
+    color: #d63384;
+    border-color: #ff69b4;
+}
+
+.action-btn i {
+    margin-right: 0.3rem;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .icp-card {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .icp-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .icp-table {
+        display: table;
+        width: 100%;
+    }
+    
+    .icp-table th,
+    .icp-table td {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+        display: table-cell;
+    }
+    
+    .icp-table th {
+        width: auto;
+        min-width: 80px;
+        padding-right: 0.5rem;
+    }
+    
+    .icp-table td {
+        padding-left: 0.5rem;
+    }
+    
+    .action-btn {
+        padding: 0.4rem 0.8rem;
+        min-width: 100px;
+        font-size: 0.8rem;
+        height: 36px;
+        margin: 0 0.3rem;
+    }
+    
+    .mascot {
+        font-size: 0.85rem;
+        margin-top: 1.2rem;
+    }
+    
+    .button-container {
+        margin-top: 1.5rem;
+    }
+    
+    .status, .feedback-link {
+        font-size: 0.75rem;
+    }
+    
+    .no-result {
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .icp-card {
+        padding: 1rem;
+    }
+    
+    .icp-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .icp-table th,
+    .icp-table td {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .action-btn {
+        min-width: 90px;
+        font-size: 0.75rem;
+        height: 34px;
+        margin: 0 0.2rem;
+    }
+    
+    .mascot {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
